@@ -1,0 +1,16 @@
+services:
+  converter-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: omni-file-converter
+    ports:
+      - "8501:8501"
+    environment:
+      - STREAMLIT_SERVER_PORT=8501
+      - STREAMLIT_SERVER_ADDRESS=0.0.0.0
+      - STREAMLIT_SERVER_HEADLESS=true
+    restart: unless-stopped
+    volumes:
+      # Optional: persist conversion history outside the container
+      - ./conversion_history.json:/app/conversion_history.json
