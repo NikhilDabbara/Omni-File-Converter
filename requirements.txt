@@ -1,0 +1,28 @@
+# Core Data & Tabular
+pandas>=2.0.0
+openpyxl>=3.1.0
+pyarrow>=15.0.0
+
+# Images & Graphics
+Pillow>=10.0.0
+img2pdf>=0.5.0
+
+# Documents & Text
+pypandoc>=1.13
+python-docx>=1.1.0
+pdf2docx>=0.5.8
+PyMuPDF>=1.24.0
+
+# Structured Data & Config
+PyYAML>=6.0
+tomli-w>=1.0.0
+
+# Media & Audio/Video
+ffmpeg-python>=0.2.0
+
+# Web Interface & Sharing
+streamlit>=1.35.0
+
+# Desktop GUI Interface
+customtkinter>=5.2.0
+tkinterdnd2>=0.3.0
